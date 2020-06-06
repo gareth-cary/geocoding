@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Flat.destroy_all
+
+puts "destroyed all"
+
+puts "creating all"
+
+Flat.create(
+  name: 'Italy',
+  address: 'venice'
+  )
+
+
+  Flat.create(
+    name: 'spain',
+    address: 'madrid'
+    )
+
+ Flat.create(
+    name: 'Italy',
+    address: 'Rome'
+    )

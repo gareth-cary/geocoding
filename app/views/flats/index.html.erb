@@ -1,0 +1,11 @@
+
+<% @flats.each do |flat| %>
+ <%= link_to(flat_path(flat), class: "card-links") do %>
+      <div class="card-product">
+        <div class="card-product-infos">
+          <h3>Country:  <em><%= "#{flat.name}" %></em></h3>
+          <p>more info: <%= "#{flat.address}" %></p>
+        </div>
+      </div>
+      <% end %>
+      <% end %>
